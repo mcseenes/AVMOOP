@@ -50,6 +50,7 @@ public abstract class Magaza extends AVMManager implements ICommonBehavior{
 
     public void veriAl()
     {
+
         System.out.println("VERI AL");
     }
 

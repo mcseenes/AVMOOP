@@ -1,6 +1,6 @@
 package com.Enes;
 
-public class GiyimMagaza extends Magaza implements ITakip{
+public class GiyimMagaza extends Magaza {
    public int denemeKabinSayisi;
    public int askiSayisi;
     public GiyimMagaza(){
@@ -18,16 +18,19 @@ public class GiyimMagaza extends Magaza implements ITakip{
 
     @Override
     public void urunSat() {
-        System.out.println(getClass().getSimpleName() + " urunu satildi");
+        System.out.println(getClass().getSimpleName() +
+                " urunu satildi");
     }
 
     @Override
     public void urunAl() {
-        System.out.println(getClass().getSimpleName() + " urunu alindi");
+        System.out.println(getClass().getSimpleName() +
+                " urunu alindi");
     }
 
     @Override
     public void stokTakip() {
-        System.out.println(getClass().getSimpleName() + " nin stok takibi satildi");
+        System.out.println(getClass().getSimpleName()
+                + " nin stok takibi satildi");
     }
 }

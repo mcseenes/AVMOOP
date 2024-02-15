@@ -1,6 +1,6 @@
 package com.Enes;
 
-public class YiyecekMagaza extends Magaza implements ITakip {
+public class YiyecekMagaza extends Magaza {
     public String menu;
     public int masasayisi;
 

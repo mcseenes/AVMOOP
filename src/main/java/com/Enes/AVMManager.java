@@ -106,7 +106,7 @@ public  class AVMManager extends Database implements IMagazaRepository {
                         System.out.println("PROGRAM SONLANDIRILDI");break;
                     default:
                         System.err.println("LUTFEN DOGRU DEGER GIRINIZ");break;
-                }
+                 }
                 break;
             }
             case 2: System.out.println("""
@@ -126,9 +126,9 @@ public  class AVMManager extends Database implements IMagazaRepository {
                     case 4: giyimMagaza.stokTakip();tercih();break;
                     case 0:
                         System.out.println("PROGRAM SONLANDIRILDI");break;
+
                     default:
                         System.err.println("LUTFEN DOGRU DEGER GIRINIZ");break;
-
                 }
                 break;
             }
@@ -143,11 +143,12 @@ public  class AVMManager extends Database implements IMagazaRepository {
             {
                 int secim2 = scanner.nextInt();
                 switch (secim2) {
-                    case 0:System.out.println("PROGRAM SONLANDIRILDI");break;
+
                     case 1: yiyecekMagaza.mesaiSaati();tercih();break;
                     case 2: yiyecekMagaza.urunSat();tercih();break;
                     case 3: yiyecekMagaza.urunAl();tercih();break;
                     case 4: yiyecekMagaza.stokTakip();tercih();break;
+                    case 0:System.out.println("PROGRAM SONLANDIRILDI");break;
                     default:
                         System.err.println("LUTFEN DOGRU DEGER GIRINIZ");break;
 
@@ -166,11 +167,13 @@ public  class AVMManager extends Database implements IMagazaRepository {
             {
                 int secim2 = scanner.nextInt();
                 switch (secim2) {
-                    case 0: System.out.println("PROGRAM SONLANDIRILDI");break;
+
                     case 1: kitapKirtasiyeMagaza.mesaiSaati();tercih();break;
                     case 2: kitapKirtasiyeMagaza.urunSat();tercih();break;
                     case 3: kitapKirtasiyeMagaza.urunAl();tercih();break;
                     case 4: kitapKirtasiyeMagaza.stokTakip();tercih();break;
+                    case 0:
+                        System.out.println("PROGRAM SONLANDIRILDI");break;
                     default:
                         System.err.println("LUTFEN DOGRU DEGER GIRINIZ");
                         break;

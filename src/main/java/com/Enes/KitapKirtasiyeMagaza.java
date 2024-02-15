@@ -1,6 +1,6 @@
 package com.Enes;
 
-public class KitapKirtasiyeMagaza extends Magaza implements ITakip{
+public class KitapKirtasiyeMagaza extends Magaza {
   public KitapKirtasiyeMagaza(){
 
   }
@@ -18,16 +18,19 @@ public class KitapKirtasiyeMagaza extends Magaza implements ITakip{
 
     @Override
     public void urunSat() {
-      System.out.println(getClass().getSimpleName()+" urunu satildi");
+      System.out.println(getClass().getSimpleName()
+              +" urunu satildi");
     }
 
     @Override
     public void urunAl() {
-      System.out.println(getClass().getSimpleName()+" urunu alindi");
+      System.out.println(getClass().getSimpleName()
+              +" urunu alindi");
     }
 
     @Override
     public void stokTakip() {
-      System.out.println(getClass().getSimpleName()+" nin stok takibi yapildi");
+      System.out.println(getClass().getSimpleName()
+              +" nin stok takibi yapildi");
     }
 }

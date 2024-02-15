@@ -1,6 +1,6 @@
 package com.Enes;
 
-public class ElektronikMagaza extends Magaza implements ITakip{
+public class ElektronikMagaza extends Magaza {
   public int  teknikServisSayisi;
   boolean urunMontajiVarMi;
 public ElektronikMagaza(){
@@ -27,6 +27,7 @@ public ElektronikMagaza(){
     super(id, ad, tur, kat);
   }
 
+
   @Override
   public void mesaiSaati() {
     System.out.println(getClass().getSimpleName() +
@@ -35,16 +36,19 @@ public ElektronikMagaza(){
 
   @Override
   public void urunSat() {
-    System.out.println(getClass().getSimpleName() + " urunu satildi");
+    System.out.println(getClass().getSimpleName()
+            + " urunu satildi");
   }
 
   @Override
   public void urunAl() {
-    System.out.println(getClass().getSimpleName() + " urunu alindi");
+    System.out.println(getClass().getSimpleName()
+            + " urunu alindi");
   }
 
   @Override
   public void stokTakip() {
-    System.out.println(getClass().getSimpleName() + " nin stok takibi satildi");
+    System.out.println(getClass().getSimpleName()
+            + " nin stok takibi satildi");
   }
 }

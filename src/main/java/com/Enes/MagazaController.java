@@ -23,6 +23,10 @@ public class MagazaController  {
             public void urunAl() {
 
             }
+            @Override
+            public void stokTakip() {
+
+            }
         };
         service.magazalariListele(magaza);
     }
